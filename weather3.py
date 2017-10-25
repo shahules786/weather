@@ -28,7 +28,3 @@ print (colored(acc.attrs["aria-label"],"blue"))
 print(colored("\n\t\t\tTHANK YOU","red"))
 
 
-
-
-
-
