@@ -3,7 +3,7 @@
 
 # In[2]:
 
-#weather
+#weatherhello
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -17,7 +17,7 @@ acc=bsobj.find("a",{"href":re.compile(r'(day=1)$')})
 print("\n\t\t")
 print colored(weather.attrs["aria-label"],"blue")
 print("\n")
-print colored(acc.attrs["aria-label"],"blue")
+print colored(acc.attrs["aria-label"],"red")
 
 
 # In[ ]:
