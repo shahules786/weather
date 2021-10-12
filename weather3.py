@@ -21,7 +21,6 @@ except Exception as e:
 bsobj=BeautifulSoup(res.text,"html.parser")
 weather=bsobj.find("span",{"class":"current"})
 acc=bsobj.find("a",{"href":re.compile(r'(day=1)$')})
-print("\n\t\t")
 print (colored(weather.attrs["aria-label"],"blue"))
 print("\n")
 print (colored(acc.attrs["aria-label"],"blue"))
